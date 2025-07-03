@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 14px;
+    background-color: rgb(163, 163, 163);
+    width: auto;
+}
+header ul {
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+    list-style: none;
+    margin-right: 20px;
+}
+header ul li {
+    color: white;
+    font-weight: 900;
+    font-size: larger;
+}
+.img_heading_div {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.img_heading_div img{
+    height: 40px;
+    width: 60px;
+}
+.navStyling {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navStyling > h1 {
+    margin-left: 20px;
+}
+.no-underline {
+    text-decoration: none;
+
+}
+.home_p {
+    margin-left: 20px;
+    color: black;
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.itemContainerH {
+    display: flex;
+    overflow-x: hidden;
+    margin-top: 4px;
+    gap: 8px;
+}
+.itemContainerH img {
+    background-color: gainsboro;
+
+}
+.itemContainerH:hover {
+    overflow-x: scroll;
+}
+.cartHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+}
+
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid salmon;
+    border-radius: 12px;
+    padding: 24px;
+    height: 50vh;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff8f8;
+    text-align: center;
+}
+
+.errorContainer .header {
+    font-size: 32px;
+    color: #333;
+    font-weight: 600;
+}
+
+.errorContainer .error_p {
+    font-size: 18px;
+    color: #d32f2f;
+    font-weight: 500;
+}
+
+.errorContainer p {
+    margin: 0 20px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.errorContainer button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.errorContainer button:hover {
+    background-color: #0056b3;
+}
+
+.errorContainer .error_p,
+.errorContainer .sorry_line {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+@media screen and (width <= 700px) {
+    header ul {
+        flex-direction: column;       
+    }
+    .itemContainerH {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home_p {
+        text-align: center;
+    }
+}

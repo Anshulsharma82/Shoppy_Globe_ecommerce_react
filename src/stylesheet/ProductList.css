@@ -1,0 +1,41 @@
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.searchContainer input {
+    width: 25%;
+    padding: 12px;
+    outline-color: blue;
+    outline-width: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+@media screen and (width <=800px) {
+    .searchContainer input {
+        width: 60%;
+    }
+}
+.productListContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.errorContainer_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh; */
+    margin-top: 25px;
+    flex-direction: column;
+}
+.errorContainer_list p {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
