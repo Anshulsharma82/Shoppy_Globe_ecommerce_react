@@ -10,6 +10,7 @@ import ProductDetail from './components/ProductDetail.jsx'
 import Home from './components/Home.jsx'
 import { Provider } from 'react-redux'
 import createStore from './utilitis/createStore.js'
+import Payment from './components/Payment.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const appRouter = createBrowserRouter([
       }
     ],
     errorElement: <Error404 />
+  },
+  {
+    path: '/payment',
+    element: <Payment />
   }
 ])
 

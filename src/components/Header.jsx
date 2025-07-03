@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 
 export default function Header() {
     // using useSelector to get the cart items details stored in the cart slice.
-    const cartItems = useSelector((store) => store.cartItems.cartItems)
+    const totalItems = useSelector((store) => store.cartItems.totalItems)    
     // using useLocation to find the route path to style the header list dynamically
     const route = useLocation().pathname;
     return (
@@ -26,7 +26,7 @@ export default function Header() {
                         <Link className='no-underline' to='/cart'>
                             <div className='cartHeader'>
                                 <li style={route === '/cart' ? {color: 'black'}: {color: 'white'}} >CART</li>
-                                <p> ({cartItems.length}) </p>
+                                <p> ({totalItems}) </p>
                                 <i className="fa-solid fa-xl fa-cart-shopping"></i>
                             </div>
                         </Link>                     

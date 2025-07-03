@@ -1,3 +1,30 @@
+.checkoutSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 14px 0px;
+    gap: 14px;
+}
+.checkoutSection .bold_pp {
+    font-size: 24px;
+}
+.free_pp {
+    color: green;
+    font-weight: 300;
+    font-size: 18px;
+}
+.checkoutSection button {
+    background-color: yellow;
+    padding: 8px 32px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.checkoutSection button:hover {
+    background-color: rgb(216, 216, 4);
+}
 .heading {
     text-align: center;
 }

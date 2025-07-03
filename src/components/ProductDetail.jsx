@@ -7,7 +7,7 @@ import { addItem } from '../utilitis/cartSlice'
 
 export default function ProductDetail() {
     const { id } = useParams()
-    const dispath = useDispatch()
+    const dispatch = useDispatch()
     const [productData, setProductData] = useState({})
     const [selectedValue, setSelectedValue] = useState(1)
     const [isValueMoreThan3, setValueMoreThan3] = useState(false)
@@ -36,7 +36,7 @@ export default function ProductDetail() {
             description: productData.description
         }
         // calling redux action function to add the item info to the cart.
-        dispath(addItem(obj))
+        dispatch(addItem(obj))
         setMsg('Added to Cart...')
         setTimeout(() => {
             setMsg('')
@@ -80,7 +80,7 @@ export default function ProductDetail() {
                     </div>
                     <div>
                         <span>Quantity:</span>
-                        // if user select 3+ from the dropdown list then create a input box so that user can add the number of items above 3.
+                        {/* // if user select 3+ from the dropdown list then create a input box so that user can add the number of items above 3. */}
                         {!isValueMoreThan3 ? <select onChange={(e) => handleOnSelect(e)} value={selectedValue}>
                             <option value={1}>1</option>
                             <option value={2}>2</option>
@@ -91,7 +91,7 @@ export default function ProductDetail() {
                     <button onClick={handleAddToCart}>Add to Cart</button>
                 </div>
             </div>
-            // Container to display the user comments.
+            {/* // Container to display the user comments. */}
             <div className="reviewContainer">
                 <p>Top Reviews</p>
                 {productData?.reviews?.map((review, index) => {

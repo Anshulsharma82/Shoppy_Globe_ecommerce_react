@@ -1,0 +1,83 @@
+.payment_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid ghostwhite;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+.payment_container h1 {
+    margin-bottom: 40px;
+}
+.payment_container p {
+    color: red;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px 24px;
+  padding: 32px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  min-width: 400px;
+}
+
+form label {
+  font-weight: 500;
+  color: #333;
+  align-self: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+form input[type="submit"] {
+  grid-column: span 2;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form button {
+  grid-column: span 2;
+  padding: 10px;
+  background-color: #e53935;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+form button:hover {
+  background-color: #c62828;
+}
